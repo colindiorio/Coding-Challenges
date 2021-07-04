@@ -67,3 +67,6 @@ titleToNumber = c => [...c].reduce((a, e) => a = a * 26 + e.charCodeAt() - 64, 0
 ```
 
 ## References
+
+ - [String.prototype.charCodeAt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/charCodeAt)
+ - [String.prototype.indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf)
