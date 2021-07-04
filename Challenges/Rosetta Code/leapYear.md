@@ -2,11 +2,11 @@
 
 Determine whether a given year is a leap year in the Gregorian calendar.
 
- - Input: isLeapYear(2018)
- - Expected Output: false
+Example:
 
- - Input: isLeapYear(2016)
- - Expected Output: true
+Input: `isLeapYear(2018)`
+
+Expected Output: `false`
 
 ## Solutions
 
