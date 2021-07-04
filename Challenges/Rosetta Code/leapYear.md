@@ -1,6 +1,6 @@
 ## Challenge
 
-Determine whether a given year is a leap year in the Gregorian calendar.
+Determine whether a given year is a leap year in the (Gregorian calendar)[https://en.wikipedia.org/wiki/Leap_year#Gregorian_calendar].
 
 #### Example #1
 
