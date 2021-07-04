@@ -28,15 +28,21 @@ Expected Output: `701`
 ## Solutions
 
 ```js
+// First Accepted Solution
 function titleToNumber(columnTitle) {
-    let total = 0;
-    let values = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    // Create array of letters to use the index of each one to switch to numbers
+    const letterValues = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    let totalValue = 0;
 
+    // Iterate through the array from right to left
     for (let i = columnTitle.length - 1; i >= 0; i--) {
-        total += 26 ** (columnTitle.length - 1- i) * values.indexOf(columnTitle[i]);
+        // Gets the value of the letter from the array above, then multiplies it by 26
+        // raised to a power based off which letter we're currently on (first letter from the
+        // right is 0, second is 1, and so on)
+        totalValue += 26 ** (columnTitle.length - 1 - i) * letterValues.indexOf(columnTitle[i]);
     }
 
-    return total;
+    return totalValue;
 }
 ```
 
