@@ -2,11 +2,11 @@
 
 Determine whether a given year is a leap year in the Gregorian calendar.
 
-Example:
+##### Example
 
-Input: `isLeapYear(2018)`
+> Input: `isLeapYear(2018)`
 
-Expected Output: `false`
+> Expected Output: `false`
 
 ## Solutions
 
@@ -25,3 +25,7 @@ function isLeapYear(year) {
 // Golfed Solution (35 chars)
 isLeapYear = y => y % 100 ? !(y % 4) : !(y % 400)
 ```
+
+## References
+
+[Remainder Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
