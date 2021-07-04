@@ -54,3 +54,7 @@ standardDeviation = (n, A = a => a.reduce((a, e) => a += e) / a.length) => +Math
 ```
 
 ## References
+
+ - [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+ - [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
