@@ -3,11 +3,12 @@ Determine whether a generated string of brackets is balanced;
 that is, whether it consists entirely of pairs of opening/closing brackets (in that order),
 none of which mis-nest.
 
-#### Examples
+#### Example #1
 Input: `isBalanced("[][]")`
 
 Expected Output: `true`
 
+#### Example #2
 Input: `isBalanced("[]]]")`
 
 Expected Output: `false`
