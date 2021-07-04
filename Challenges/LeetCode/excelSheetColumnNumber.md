@@ -30,13 +30,13 @@ Expected Output: `701`
 ```js
 // First Accepted Solution
 function titleToNumber(columnTitle) {
-    // Create array of letters to use the index of each one to switch to numbers
-    const letterValues = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    // Creates a string of letters to use the index of each one to switch to numbers
+    const letterValues = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let totalValue = 0;
 
     // Iterate through the array from right to left
     for (let i = columnTitle.length - 1; i >= 0; i--) {
-        // Gets the value of the letter from the array above, then multiplies it by 26
+        // Gets the value of the letter from the string above, then multiplies it by 26
         // raised to a power based off which letter we're currently on (first letter from the
         // right is 0, second is 1, and so on)
         totalValue += 26 ** (columnTitle.length - 1 - i) * letterValues.indexOf(columnTitle[i]);
@@ -44,6 +44,26 @@ function titleToNumber(columnTitle) {
 
     return totalValue;
 }
+```
+
+```js
+// Optimized Preformance
+function titleToNumber(columnTitle) {
+    let totalValue = 0;
+
+    for (let letter of columnTitle) {
+        // Multiplies the current total by 26 each time, then adds the
+        // letters number value to the total
+        totalValue = totalValue * 26 + letter.charCodeAt() - 64;
+    }
+
+    return totalValue;
+}
+```
+
+```js
+// Golfed Solution (65 chars)
+titleToNumber = c => [...c].reduce((a, e) => a = a * 26 + e.charCodeAt() - 64, 0)
 ```
 
 ## References
