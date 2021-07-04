@@ -2,7 +2,7 @@
 
 Determine whether a given year is a leap year in the Gregorian calendar.
 
-#### Example
+#### Example #1
 
 Input: `isLeapYear(2018)`
 
