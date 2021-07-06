@@ -4,7 +4,7 @@ Write a function that takes an array of numbers as parameter and returns the [st
 #### Example #1
 Input: `standardDeviation([2, 4, 4, 4, 5, 5, 7, 9])`
 
-Expected `Output: 2`
+Expected Output: `2`
 
 
 ## Solutions
