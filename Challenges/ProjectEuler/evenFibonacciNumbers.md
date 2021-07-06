@@ -66,7 +66,19 @@ function fiboEvenSum(n) {
 ```
 
 ```js
-// Golfed Solution (x chars)
+// Golfed Solution (73 chars)
+fiboEvenSum = n => {
+    c = 2
+    l = 1
+    t = 0
+
+    while (c <= n) {
+        if (c % 2 - 1) t += c;
+        [l, c] = [c, l + c]
+    }
+    
+    return t
+}
 ```
 
 ## References
