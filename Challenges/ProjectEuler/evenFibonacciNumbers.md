@@ -50,10 +50,13 @@ function fiboEvenSum(n) {
     let total = 0;
 
     while (currentNum <= n) {
+        // If the most recent number is even, add it to the total
         if (currentNum % 2 === 0) {
             total += currentNum;
         }
 
+        // previousNum gets assigned the value of currentNum, and
+        // currentNum gets assigned the sum of itself and the previousNum
         [previousNum, currentNum] = [currentNum, previousNum + currentNum];
     }
     
