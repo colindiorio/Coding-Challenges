@@ -1,7 +1,9 @@
 ## Challenge
 
 Write a function to return the factorial of a number.
+
 Factorial of a number is given by:
+
 n! = n * (n-1) * (n-2) * ..... * 1
 
 #### Example #1
